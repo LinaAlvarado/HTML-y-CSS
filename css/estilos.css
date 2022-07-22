@@ -1,6 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+*{padding: 0;margin: 0;}
+
 body{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos Menu de Navegación */
+.cabecero{
+    width: 100%;
+    overflow: hidden;
+    background-color:#ffffff;
+    position: sticky;
+    top:0px;
+}
+
+.logoCabecero{
+    float: left;
+    width: 260px;
+    margin: 18px;
+}
+
+.menu{
+    list-style-type: none;
+    float: right;
+    margin: 30px;
+}
+
+.menu li{
+    /* float:right; */
+    display: inline-block;
+}
+
+
+.menu li a{
+    color:#09D0CB;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #EDAB11;
+}
+
+/* Estilos index.html */
+
+#intro{
+    background-color:#ffffff;
+    padding: 50px;
+}
+
+.textoContenedor{
+    display:inline-block;
+}
+
+#tituloIndex{
+font-size:30px;
+color:#102067;
+position: absolute;
+top: 290px;
+}
+#parrafoIndex{
+    color:#102067;
+    position: absolute;
+    top: 335px;
+}
+/* .imagenContenedor{
+    overflow: hidden;
+    display:inline-block;
+    z-index: 4;
+    
+} */
+.imagen{
+    width: 20%;
+    float: right;
+    z-index: 4;
+    margin: 7PX;
+}
+
+/* Estilos index.html */
+
+#sobremi{
+    background-color:  #ffffff
+}
+
+.imagenC_Sobremi{
+    overflow: hidden;
+    width: 50%;
+}
+
+.imagenSobreMi{
+    width: 50%;
+    float: right;
+    margin: 30PX;
+}
+
+.textoC_Sobremi{
+    display: inline-block;
+    float: left;
+    padding: 40PX;
+}
+.titulo{
+    color: #102067;
+}
+
+
+
+
+#servicios{
+    /* background-color:#8CE1DF; */
+    padding: 40px;
+}
+
+.subtitulo_servicios{
+    font-weight: 500;
+    color: #102067;
+}
+
+.card{
+    text-align: center;
+    display: inline-block;
+    margin-left: 40px;
+    padding:30px ;
+}
+
+/* Footer */
+
+.piePagina{
+    background-color:#102067;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#contacto{
+    padding: 70px;
+}
+
+#contacto label{
+    color: #102067;
+    font-weight: 500px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+#contacto input{
+    width: 300px;
+    height: 35px ;
+    border: 1px solid #102067;
+    border-radius: 9px;
+}
+
+
+ i{
+    color:#EDAB11;
+ font-size: 60px;
+}
+
+.elemento{
+    margin: 20px;
 }
