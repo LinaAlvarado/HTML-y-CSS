@@ -134,12 +134,42 @@ top: 290px; */
     /* padding: 20px; */
     margin: auto 0;
 }
+
 .titulo{
     color: #102067;
+    margin-left: 75px;
 }
+.boton{
+    margin-left: 80px;
+    color: #ffffff;
+    background-color: #102067;
+}
+.video{
+    margin: 40px;
 
+    /* https://shadows.brumm.af/ */
+    box-shadow:
+    1.3px 1.3px 110.4px rgba(0, 0, 0, 0.039),
+    7.7px 7.7px 109px rgba(0, 0, 0, 0.058),
+    26.4px 26.4px 97.6px rgba(0, 0, 0, 0.077),
+    100px 100px 119px rgba(0, 0, 0, 0.12)
+;
+
+
+}
 /* index.html > servicios */
 
+#servicios_2{
+    margin: 50px;
+}
+
+.titulo-servicio{
+    margin: 40px;
+}
+.titulo-servicio-index{
+    color: #102067;
+    margin: 20px;
+}
 .padding_{
     margin: 40px;
 }
@@ -171,6 +201,8 @@ top: 290px; */
     margin: 40px;
 }
 
+/* formulario */
+
 /* Footer */
 #titulofooter{
     font-size: 20PX;
@@ -185,7 +217,18 @@ top: 290px; */
 }
 
 #contacto{
-    padding: 70px;
+    padding: 70px;  
+    background-color: #d0d4ff;
+    width: 30%;
+    border-radius: 20px;
+    margin: 70px;
+    /* https://shadows.brumm.af/ */
+    box-shadow:
+    1.3px 1.3px 110.4px rgba(0, 0, 0, 0.039),
+    7.7px 7.7px 109px rgba(0, 0, 0, 0.058),
+    26.4px 26.4px 97.6px rgba(0, 0, 0, 0.077),
+    100px 100px 119px rgba(0, 0, 0, 0.12)
+;
 }
 
 #contacto label{
@@ -205,11 +248,11 @@ top: 290px; */
 
  i{
     color:#D83FD5;
- font-size: 60px;
+    font-size: 60px;
 }
 
 .elemento{
-    margin: 20px;
+    margin: 20px 20px 20px 0px;
 }
 
 .iconfooter{
@@ -226,7 +269,14 @@ margin: 10px;
 padding: 10px;
 width: 300px;
 }
+.portafolio-card{
+    margin: 40px;
+}
 
-.servicios_2{
+.sobremi_pag{
+    margin: 40px;
+}
+
+.contacto_pag{
     margin: 40px;
 }
