@@ -8,6 +8,12 @@ body{
 }
 
 /* Estilos Menu de Navegación */
+
+.cabeza{
+    position: sticky;
+    top:0px;
+}
+
 .cabecero{
     width: 100%;
     /* overflow: hidden; */
@@ -24,6 +30,7 @@ body{
 .logoCabecero{
     /* float: left; */
     width: 260px;
+    margin:0 30px;
     /* margin: 18px; */
 }
 
@@ -107,8 +114,7 @@ top: 290px; */
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    padding: 0 70px;
-
+    padding: 0 80px;
 }
 
 .imagenC_Sobremi{
@@ -119,7 +125,7 @@ top: 290px; */
 .imagenSobreMi{
     width:360px;
     /* float: right; */
-    margin: 20px;
+    margin: 10px 30px;
 }
 
 .textoC_Sobremi{
@@ -132,27 +138,44 @@ top: 290px; */
     color: #102067;
 }
 
+/* index.html > servicios */
 
+.padding_{
+    margin: 40px;
+}
 
+.cards_C{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center};
 
 #servicios{
     /* background-color:#8CE1DF; */
-    padding: 40px;
+    margin:30px;
 }
 
 .subtitulo_servicios{
-    font-weight: 500;
+    font-weight: 600;
     color: #102067;
 }
 
 .card{
+    background-color:#fff0d0;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.123) ;
     text-align: center;
     display: inline-block;
     margin-left: 40px;
-    padding:30px ;
+    padding:30px;
+    margin: 40px;
 }
 
 /* Footer */
+#titulofooter{
+    font-size: 20PX;
+    font-weight: 600;
+}
 
 .piePagina{
     background-color:#102067;
@@ -181,10 +204,29 @@ top: 290px; */
 
 
  i{
-    color:#EDAB11;
+    color:#D83FD5;
  font-size: 60px;
 }
 
 .elemento{
     margin: 20px;
+}
+
+.iconfooter{
+    color: #EDAB11;
+    font-size: 30px;
+}
+
+.youtube{
+    font-size: 32px;
+}
+
+.provisional{
+margin: 10px;
+padding: 10px;
+width: 300px;
+}
+
+.servicios_2{
+    margin: 40px;
 }
