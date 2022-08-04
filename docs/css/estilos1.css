@@ -271,7 +271,7 @@ width: 300px;
    
     .logoCabecero{
         /* float: left; */
-        width: 200px;
+        width: 150px;
         margin:0 30px;
         /* margin: 18px; */
     }
@@ -280,7 +280,7 @@ width: 300px;
         margin: auto;
     }
     .tituloIndex{
-        font-size: 30px;
+        font-size: 25px;
         color:#102067;
         margin:0px 30px;
     }
