@@ -1,30 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* Estilos por defecto */
-*{padding: 0;margin: 0;}
 
+*{padding: 0;margin: 0;}
 
 body{
     background-color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
 }
 
-/** Estilos Menu de Navegación */
+/* Estilos Menu de Navegación */
 
 .cabeza{
     position: sticky;
-    top:0px;
+    top: 0px;
 }
-
 .cabecero{
-    width: 100%;
+    /* overflow: hidden; */
     background-color:#ffffff;
     position: sticky;
-    top:0px;
-    display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+
 }
 
 .logoCabecero{
@@ -33,76 +29,72 @@ body{
     margin:0 30px;
     /* margin: 18px; */
 }
-
-.menu{
-    list-style-type: none;
-    /* float: right; */
-    margin: 30px;
+.nav__container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    height: 80px;
+    color: #102067;
+    background-color: #fff;
 }
 
-.menu li{
-    /* float:right; */
-    display: inline-block;
+.nav__input:checked + .nav__menu{
+    background-color: #fff0d0;
 }
-
-
-.menu li a{
-    color:#102067;
-    margin: 10px;
-    padding: 10px;
-    font-weight: 500;
+.nav__label, .nav__input{
+    display: none;
+}
+.nav__menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    padding: 20px;
+}
+.nav__item{
+    color: #102067;
     text-decoration: none;
 }
 
-li a:hover{
-    color:#09D0CB;
+@media (min-width: 320px) and (max-width: 865px){
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: #fff0d0;
+        color: #fff;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+    }
+}
+/*tablet y portatil*/
+@media (min-width: 866px) and (max-width:1023px){
+
 }
 
-/* * Estructura Grid*/
-.grid{
-    display: grid;
-    grid-template-areas: 
-        "intro"
-        "sobremi" 
-        "servicios"
-        "formulario";
-    grid-template-rows: 1fr 1fr 1fr;
-    
+
+@media (min-width:1024) and (max-width:1200px){
+
 }
-
-.grid1
-{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-}
-.grid2
-{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    align-items: center;
-}
-
-
-
-section#intro{
-    grid-area:intro;
-}
-
-section#sobremi{
-    grid-area: sobremi;
-}
-
-section#servicios{
-    grid-area: servicios;
-}
-
-section#formulario{
-    grid-area: formulario;
-}
-
-/** Estilos index.html > Parte intro */
+/* Estilos index.html > Parte intro */
 
 /* contenedor intro */
 #intro{
@@ -122,14 +114,12 @@ section#formulario{
 .contenedor_1{
     margin: auto 0 ;
 }
-
 #tituloIndex{
-font-size:35px;
-color:#102067;
-/* position: absolute;
-top: 290px; */
+    font-size:35px;
+    color:#102067;
+    /* position: absolute;
+    top: 290px; */
 }
-
 #parrafoIndex{
     color:#102067;
     /* position: absolute;
@@ -157,34 +147,33 @@ top: 290px; */
 
 #sobremi{
     background-color:#ffffff;
-    color: #102067;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     padding: 0 80px;
 }
 
-/*.imagenC_Sobremi{
-    overflow: hidden; 
-     width:; 
-}*/
+.imagenC_Sobremi{
+    /* overflow: hidden; */
+    /* width:; */
+}
 
 .imagenSobreMi{
     width:360px;
-    padding: 30px;
     /* float: right; */
-    /* margin: 10px 30px; */
+    margin: 10px 30px;
 }
 
 .textoC_Sobremi{
     display: inline-block;
     /* float: left; */
-    padding: 20px;
+    /* padding: 20px; */
     margin: auto 0;
 }
 
 .titulo{
     color: #102067;
+    margin-left: 75px;
 }
 .boton{
     margin-left: 80px;
@@ -214,10 +203,9 @@ top: 290px; */
     margin: 40px;
 }
 .titulo-servicio-index{
-    display: inline-block;
-    color:#102067;
-    margin:0 95px;
-} 
+    color: #102067;
+    margin: 20px;
+}
 .padding_{
     margin: 40px;
 }
@@ -230,19 +218,16 @@ top: 290px; */
 
 #servicios{
     /* background-color:#8CE1DF; */
-    /* margin:30px; */
-    /* display: flex;
-    flex-flow: row; */
+    margin:30px;
 }
 
 .subtitulo_servicios{
     font-weight: 600;
-    color:#D83FD5;
+    color: #102067;
 }
 
 .card{
     background-color:#fff0d0;
-    color: #102067;
     border-radius: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.123) ;
     text-align: center;
@@ -253,20 +238,6 @@ top: 290px; */
 }
 
 /* formulario */
-
-/* Footer */
-#titulofooter{
-    font-size: 20PX;
-    font-weight: 600;
-}
-
-.piePagina{
-    background-color:#102067;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
 #contacto{
     padding: 70px;  
     background-color: #d0d4ff;
@@ -295,6 +266,20 @@ top: 290px; */
     border: 1px solid #102067;
     border-radius: 9px;
 }
+/* Footer */
+#titulofooter{
+    font-size: 20PX;
+    font-weight: 600;
+}
+
+.piePagina{
+    background-color:#102067;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
 
 
  i{
