@@ -11,20 +11,16 @@ body{
 
 .cabeza{
     position: sticky;
-    top:0px;
+    top: 0px;
 }
-
 .cabecero{
-    width: 100%;
     /* overflow: hidden; */
     background-color:#ffffff;
     position: sticky;
-    top:0px;
-    display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+
 }
 
 .logoCabecero{
@@ -33,29 +29,96 @@ body{
     margin:0 30px;
     /* margin: 18px; */
 }
-
-.menu{
-    list-style-type: none;
-    /* float: right; */
-    margin: 30px;
+.nav__container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    height: 80px;
+    color: #102067;
+    background-color: #fff;
 }
 
-.menu li{
-    /* float:right; */
-    display: inline-block;
+.nav__input:checked + .nav__menu{
+    background-color: #fff0d0;
 }
-
-
-.menu li a{
-    color:#09D0CB;
-    margin: 10px;
-    padding: 10px;
-    font-weight: 500;
+.nav__label, .nav__input{
+    display: none;
+}
+.nav__menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    padding: 20px;
+}
+.nav__item{
+    color: #102067;
     text-decoration: none;
 }
 
-li a:hover{
-    color: #EDAB11;
+.grid{
+    display: grid;
+    grid-template-areas:
+    "inicio"
+    "sobremi"
+    "servicios"
+    "formulario";
+    grid-template-rows: repeat(4,1fr);
+}
+
+section#intro{
+    grid-area: inicio;
+}
+section#sobremi{
+    grid-area: sobremi;
+}
+
+section#servicios{
+    grid-area: servicios;
+    height: 0cm;
+}
+
+form#contacto{
+    grid-area: formulario;
+}
+@media (min-width: 320px) and (max-width: 865px){
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: #fff0d0;
+        color: #fff;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+
+    }
+}
+/*tablet y portatil*/
+@media (min-width: 866px) and (max-width:1023px){
+
+}
+
+
+@media (min-width:1024) and (max-width:1200px){
+
 }
 
 /* Estilos index.html > Parte intro */
@@ -178,7 +241,8 @@ top: 290px; */
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center};
+    justify-content: center;
+}
 
 #servicios{
     /* background-color:#8CE1DF; */
@@ -280,4 +344,3 @@ width: 300px;
 .contacto_pag{
     margin: 40px;
 }
-p{color: #102067;}
