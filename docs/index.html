@@ -1,126 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link  rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/estilos1.css"/>
     <link rel="icon" href="imagenes/logo_2.png"/>
     <title>Linamariawords - Home</title>
 </head>
-
 <body>
-    <header class="cabeza">
-        <div class="cabecero"> 
-            <div> 
-            <img class="logoCabecero" src="imagenes/logomenu.png" alt="Logo_1"> 
+
+    <div id="areas">
+        <!-- menu -->
+        <nav class="nav">
+                <div class="nav__container">
+    
+                <img class="logoCabecero" src="imagenes/logomenu.png" alt="Logo_1"> 
+    
+                <label for="menu" class="nav__label">
+                    <img src="imagenes/menu.svg" class="nav__img">
+                </label>
+    
+                <input type="checkbox" id="menu" class="nav__input">
+    
+                <div class="nav__menu">
+                    <a class="nav__item" href="index.html">Inicio</a>
+                    <a class="nav__item" href="pages/servicios.html">Servicios</a>
+                    <a class="nav__item" href="pages/portafolio.html">Portafolio</a>
+                    <a class="nav__item" href="pages/contacto.html">Contacto</a>
+                    <a class="nav__item" href="pages/sobremi.html">Sobre Mi</a>
+                </div>
+    
             </div>
-            <!-- Menú navegación -->
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/servicios.html">Servicios</a></li>
-                    <li><a href="pages/portafolio.html">Portafolio</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                    <li><a href="pages/sobremi.html">Sobre Mi</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </nav>
 
-    <main>
-    <!-- Presentación
-        <section id="intro">
+        <!-- header -->
+        <header class="header">
 
-            <div class="textoContenedor">
-                <h1 id="tituloIndex">!Hola,soy @Linamariawords¡</h1>
-                <p>La creatividad es la inteligencia divirtiendose-Albert Einstein</p>
-            </div>
-
-                <div class="imagenContenedor">
-                    <img class="imagen" src="imagenes/lettering.JPG"/>
-                    <img class="imagen" src="imagenes/abeja.JPG"/>
-                    <img class="imagen" src="imagenes/lettering2.JPG"/>
-            </div>
-
-        </section>  -->
-
-        <!-- Presentación -->
-        <section id="intro">
-            <div class="contenedor_1"> 
-                    <h1 id="tituloIndex">-¡Hola, soy @Linamariawords!</h1>
+            <div class="contenedor-txt"> 
+                    <h1 id="tituloIndex">¡Hola, soy @Linamariawords!</h1>
                     <p id="parrafoIndex">La creatividad es la inteligencia divirtiendose-Albert Einstein</p>
             </div>
-            <div class="imagenContenedor"> 
-                    <img class="imagen" src="imagenes/lettering.JPG"/>
-                    <img class="imagen" src="imagenes/abeja.JPG"/>
-                    <!-- <img class="imagen" src="imagenes/lettering2.JPG"/> -->
-                    <img class="imagen" src="imagenes/salvador.JPG"/>
-            </div>
-        </section> 
 
-    <!-- Sobre mi -->
-        <section id="sobremi"> 
-            <div class="textoC_Sobremi"> <h2 class="titulo"> Sobre mi</h2>
+            <div class="contenedor-img"> 
+                    <img class="img" src="imagenes/lettering.JPG"/>
+                    <img class="img" src="imagenes/abeja.JPG"/>
+                    <img class="img" src="imagenes/lettering2.JPG"/>
+                    <img class="img" src="imagenes/salvador.JPG"/>
+            </div>
+
+        </header>
+
+        <!-- sobremi -->
+        <section id="sobremi" class="sobremi">
+
+            <div class="textoC_Sobremi">
+                <h2 class="titulo">Sobre mi</h2>
                 <p>Holaaa! me llaman linamariawords, soy estudiante de Diseño Ux/Ui en CoderHouse <br>
                 y dibujante por pasión, estoy aprendiendo a hacer páginas cool como esta que estás viendo :) <br>
-                Hago dibujitos y lettering en procreate. En youtube te paso Tips!!</p></div>
-            <div class="imagenC_Sobremi"><img class="imagenSobreMi" src="imagenes/ilustración.jpg"/> </div>
+                Hago dibujitos y lettering en procreate. En youtube te paso Tips!!</p>
+            </div>
+
+            <div class="imagenC_Sobremi">
+                <img class="imagenSobreMi" src="imagenes/ilustración.jpg"/>
+            </div>
+
         </section>
-    <!-- Servicios -->
-    <section id="servicios"> 
-        <center>
-            <h2 class="titulo-servicio-index"> Servicios</h2>
-        </center>
-        <div class="cards_C"> 
-            
-        <div class="card">
-            <i class='bx bxs-paint icono'></i>
-            <p class="subtitulo_servicios"> Ilustración</p>
-            <p>¡Vamos a dibujarte! <br> ilustraciones personalizadas.</p>
-        </div>
-        <div class="card">
-            <i class='bx bxs-t-shirt icono'></i>
-            <p class="subtitulo_servicios"> Camisetas</p>
-            <p> Diseños increibles y coloridos <br> en tus camisas :)</p>
-        </div>
-        <div class="card">
-            <i class='bx bx-palette icono'></i>
-            <p class="subtitulo_servicios"> Curso</p>
-            <p>Aprende a dibujar conmigo, <br> nos vemos por Youtube!!</p>
-        </div>
-        </div>
-    </section>
 
-    <!-- Contactame -->
-    <center>
-        <form id="contacto"> 
-        <div class="elemento">
-            <h2 class="titulo"> Contactame</h2>
-            <div class="elemento"> 
-            <label for="name"> Nombre:</label>
-            <input type="text" id="name" placeholder="Escribe tu nombre"/>
-        </div>
+        <!-- servicios -->
+        <section class="servicios">
+            <h2 class="titulo-servicio-index">Servicios</h2>
+            <div class="cards_C"> 
+                
+            <div class="card">
+                <i class='bx bxs-paint icono'></i>
+                <p class="subtitulo_servicios">Ilustración</p>
+                <p>¡Vamos a dibujarte! <br> ilustraciones personalizadas.</p>
+            </div>
+            <div class="card">
+                <i class='bx bxs-t-shirt icono'></i>
+                <p class="subtitulo_servicios"> Camisetas</p>
+                <p> Diseños increibles y coloridos <br> en tus camisas :)</p>
+            </div>
+            <div class="card">
+                <i class='bx bx-palette icono'></i>
+                <p class="subtitulo_servicios"> Curso</p>
+                <p>Aprende a dibujar conmigo, <br> nos vemos por Youtube!!</p>
+            </div>
+            </div>
+        </section>
+        <!-- contacto -->
+        <section class="contacto">
+            <form id="contacto"> 
+
+                <div class="elemento">
+                    <h2 class="titulo"> Contactame</h2>
+                    <div class="elemento"> 
+                    <label for="name"> Nombre:</label>
+                    <input type="text" id="name" placeholder="Escribe tu nombre"/>
+                </div>
+                
+                <div class="elemento"> 
+                    <label for="email"> Correo:</label>
+                    <input type="email" id="email" placeholder="Escribe tu Correo"/>
+                    <br>
+                </div>
         
-        <div class="elemento"> 
-            <label for="email"> Correo:</label>
-            <input type="email" id="email" placeholder="Escribe tu Correo"/>
-            <br>
-        </div>
-
-        <div class="elemento">
-            <label for="Mensaje"> Mensaje:</label>
-                <input type="text" id="mensaje"/>
-        </div>
-
-            <input class="boton" type="submit" value="Enviar Mensaje"/>
-            <!-- <img src="" alt="No se que imagen poner aún">  -->
-
-    </form>
-    </center>
-    </main>
-
+                <div class="elemento">
+                    <label for="Mensaje"> Mensaje:</label>
+                    <input type="text" id="mensaje"/>
+                </div>
+                    <input class="boton" type="submit" value="Enviar Mensaje"/>
+                    <!-- <img src="" alt="No se que imagen poner aún">  -->
+            </form>
+        </section>
+        <!-- footer -->
+        
     <footer class="piePagina">
         <!-- En la parte izquierda a un lado va el logo-->
         <div>
@@ -134,5 +130,8 @@
             <a href="https://www.youtube.com/channel/UCj7-mZiRitkaYNp_gMaD5gQ"><i class='bx bxl-youtube iconfooter youtube' ></i></a>
         </div>
     </footer>
+
+    </div>
+
 </body>
 </html>

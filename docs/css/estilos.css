@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+/* Estilos por defecto */
 *{padding: 0;margin: 0;}
+
 
 body{
     background-color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estilos Menu de Navegación */
+/** Estilos Menu de Navegación */
 
 .cabeza{
     position: sticky;
@@ -16,7 +17,6 @@ body{
 
 .cabecero{
     width: 100%;
-    /* overflow: hidden; */
     background-color:#ffffff;
     position: sticky;
     top:0px;
@@ -47,7 +47,7 @@ body{
 
 
 .menu li a{
-    color:#09D0CB;
+    color:#102067;
     margin: 10px;
     padding: 10px;
     font-weight: 500;
@@ -55,10 +55,54 @@ body{
 }
 
 li a:hover{
-    color: #EDAB11;
+    color:#09D0CB;
 }
 
-/* Estilos index.html > Parte intro */
+/* * Estructura Grid*/
+.grid{
+    display: grid;
+    grid-template-areas: 
+        "intro"
+        "sobremi" 
+        "servicios"
+        "formulario";
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.grid1
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+}
+.grid2
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+
+
+section#intro{
+    grid-area:intro;
+}
+
+section#sobremi{
+    grid-area: sobremi;
+}
+
+section#servicios{
+    grid-area: servicios;
+}
+
+section#formulario{
+    grid-area: formulario;
+}
+
+/** Estilos index.html > Parte intro */
 
 /* contenedor intro */
 #intro{
@@ -78,12 +122,14 @@ li a:hover{
 .contenedor_1{
     margin: auto 0 ;
 }
+
 #tituloIndex{
 font-size:35px;
 color:#102067;
 /* position: absolute;
 top: 290px; */
 }
+
 #parrafoIndex{
     color:#102067;
     /* position: absolute;
@@ -111,33 +157,34 @@ top: 290px; */
 
 #sobremi{
     background-color:#ffffff;
+    color: #102067;
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     padding: 0 80px;
 }
 
-.imagenC_Sobremi{
-    /* overflow: hidden; */
-    /* width:; */
-}
+/*.imagenC_Sobremi{
+    overflow: hidden; 
+     width:; 
+}*/
 
 .imagenSobreMi{
     width:360px;
+    padding: 30px;
     /* float: right; */
-    margin: 10px 30px;
+    /* margin: 10px 30px; */
 }
 
 .textoC_Sobremi{
     display: inline-block;
     /* float: left; */
-    /* padding: 20px; */
+    padding: 20px;
     margin: auto 0;
 }
 
 .titulo{
     color: #102067;
-    margin-left: 75px;
 }
 .boton{
     margin-left: 80px;
@@ -167,9 +214,10 @@ top: 290px; */
     margin: 40px;
 }
 .titulo-servicio-index{
-    color: #102067;
-    margin: 20px;
-}
+    display: inline-block;
+    color:#102067;
+    margin:0 95px;
+} 
 .padding_{
     margin: 40px;
 }
@@ -182,16 +230,19 @@ top: 290px; */
 
 #servicios{
     /* background-color:#8CE1DF; */
-    margin:30px;
+    /* margin:30px; */
+    /* display: flex;
+    flex-flow: row; */
 }
 
 .subtitulo_servicios{
     font-weight: 600;
-    color: #102067;
+    color:#D83FD5;
 }
 
 .card{
     background-color:#fff0d0;
+    color: #102067;
     border-radius: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.123) ;
     text-align: center;
