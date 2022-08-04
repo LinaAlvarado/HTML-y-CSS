@@ -5,28 +5,36 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link  rel="stylesheet" href="../css/estilos.css"/>
+    <link  rel="stylesheet" href="../css/estilos1.css"/>
     <link rel="icon" href="../imagenes/logo_2.png">
     <title>Contactame</title>
 </head>
 <body>
     <header class="cabeza">
-        <div class="cabecero"> 
-            <div> 
-                <img class="logoCabecero" src="../imagenes/logomenu.png" alt="Logo_1"> <!-- Logo de marca -->
-            </div>
-            <!-- Menú navegación -->
-            <nav>
-                <ul class="menu">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="portafolio.html">Portafolio</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="sobremi.html">Sobre Mi</a></li>
-                </ul>
+        <header class="cabeza">
+            <nav class="nav">
+                <div class="nav__container">
+        
+                    <img class="logoCabecero" src="../imagenes/logomenu.png" alt="Logo_1"> 
+            
+                    <label for="menu" class="nav__label">
+                        <img src="../imagenes/menu.svg" class="nav__img">
+                    </label>
+            
+                    <input type="checkbox" id="menu" class="nav__input">
+            
+                    <div class="nav__menu">
+                        <a class="nav__item" href="../index.html">Inicio</a>
+                        <a class="nav__item" href="servicios.html">Servicios</a>
+                        <a class="nav__item" href="portafolio.html">Portafolio</a>
+                        <a class="nav__item" href="contacto.html">Contacto</a>
+                        <a class="nav__item" href="sobremi.html">Sobre Mi</a>
+                    </div>
+        
+                </div>
             </nav>
-        </div>
         </header>
+
     <main class="contacto_pag"> 
         <form id="contacto"> 
             <div class="elemento">

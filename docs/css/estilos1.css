@@ -78,44 +78,13 @@ section.footer{
 }
 .nav__item{
     color: #102067;
+    font-weight: 600;
     text-decoration: none;
 }
-
-@media (min-width: 320px) and (max-width: 865px){
-    .nav__label{
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav__menu{
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background-color: #fff0d0;
-        color: #fff;
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
-    }
-    .nav__input:checked + .nav__menu{
-        clip-path: circle(100% at center);
-    }
-
-}
-/*tablet y portatil*/
-@media (min-width: 866px) and (max-width:1023px){
-
+.nav__item:hover{
+    color:#09D0CB;
 }
 
-
-@media (min-width:1024) and (max-width:1200px){
-
-}
 
 /* header */
 .header{
@@ -130,22 +99,29 @@ section.footer{
 .contenedor-txt{
     margin: auto;
 }
-#tituloIndex{
-    font-size:35px;
+.tituloIndex{
+    font-size:40px;
     color:#102067;
 }
 #parrafoIndex{
     color:#102067;
     margin: auto;
+    font-size: 20px;
 }
 /* img */
 .contenedor-img{
    width: 50%;
    margin: auto;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+
+
 }
 .img{
-    width: 245px;
+    width: 250px;
     margin: 3px;
+    
 }
 
 
@@ -182,10 +158,12 @@ section.footer{
 }
 .titulo-servicio-index{
     color: #102067;
-    margin-left: 5%;
+    text-align: center;
+    
 }
 .cards_C{
-    margin-left: 4%; 
+    /* margin-left: 4%;  */
+    align-items: center
 };
 
 
@@ -199,7 +177,7 @@ section.footer{
     border-radius: 20px;
     text-align: center;
     display: inline-block;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     padding:30px;
     margin: 40px;
 }
@@ -252,4 +230,114 @@ i{
     color: white;
     text-align: center;
     padding: 30px;
+}
+
+.iconfooter{
+    color: #EDAB11;
+    font-size: 30px;
+}
+
+
+/* index.html > servicios */
+
+#servicios_2{
+    margin: 50px;
+}
+
+.subtitulo_servicios{
+    font-weight: 600;
+    color: #102067;
+}
+
+.provisional{
+margin: 10px;
+padding: 10px;
+width: 300px;
+}
+
+.portafolio-card{
+    margin: 40px;
+}
+
+.sobremi_pag{
+    margin: 40px;
+}
+
+.contacto_pag{
+    margin: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 865px){
+   
+    .logoCabecero{
+        /* float: left; */
+        width: 200px;
+        margin:0 30px;
+        /* margin: 18px; */
+    }
+
+    .contenedor-txt{
+        margin: auto;
+    }
+    .tituloIndex{
+        font-size: 30px;
+        color:#102067;
+        margin:0px 30px;
+    }
+    #parrafoIndex{
+        color:#102067;
+        margin: auto;
+        font-size: 18px;
+        margin: 0px 30px;
+    }
+
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color: #fff0d0;
+        color: #fff;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+    }
+
+    /* .contenedor-img{
+        display: flex;
+        width: 30%;
+        margin: auto;
+     }
+     .img{
+         width: 200px;
+         margin: 3px;
+     } */
+     
+     .imagenSobreMi{
+        width: 250px;
+        margin: 20px 0px 10px 0px;
+    }
+    
+
+}
+/*tablet y portatil*/
+@media (min-width: 866px) and (max-width:1023px){
+
+}
+
+
+@media (min-width:1024) and (max-width:1200px){
+
 }
