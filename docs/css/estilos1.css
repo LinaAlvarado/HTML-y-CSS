@@ -40,6 +40,11 @@ section.footer{
     grid-area: footer;
 }
 
+#area2{
+ display: grid;
+ grid-template-areas: ;
+}
+
 
 
 /* menu */
@@ -110,18 +115,17 @@ section.footer{
 }
 /* img */
 .contenedor-img{
-   width: 50%;
-   margin: auto;
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: flex-start;
-
-
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 450px;
+    padding: 20px;
+    grid-gap: 15px;
 }
 .img{
-    width: 250px;
-    margin: 3px;
-    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -138,6 +142,7 @@ section.footer{
 .imagenSobreMi{
     width: 360px;
     margin: 20px 0px 10px 0px;
+    object-fit: cover;
 }
 
 .textoC_Sobremi{
@@ -151,20 +156,18 @@ section.footer{
 
 /* servicios */
 .servicios {
-    padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin: auto;
 }
 .titulo-servicio-index{
     color: #102067;
     text-align: center;
     
 }
-.cards_C{
-    /* margin-left: 4%;  */
-    align-items: center
-};
+/* .cards_C{
+    margin-left: 4%;
+}; */
 
 
 .subtitulo_servicios{
@@ -198,16 +201,16 @@ i{
 }
 #contacto{
     padding: 30px;  
-    background-color: #c8d8f5;
-    width: 40%;
+    background-color:#8CE1DF;
+    width: 30%;
     height: 75%;
     display: block;
     border-radius: 20px;
 }
 
 #contacto label{
-    color: #102067;
-    font-weight: 500px;
+    color:#102067;
+    font-weight:500px;
     padding: 5px;
 }
 
@@ -219,6 +222,9 @@ i{
     margin: 5px;
 }
 
+#titulo-contacto{
+    color:#102067;
+}
 /* footer */
 .footer{
     font-size: 20PX;
@@ -240,8 +246,8 @@ i{
 
 /* index.html > servicios */
 
-#servicios_2{
-    margin: 50px;
+.servicios_2{
+    margin: 80px;
 }
 
 .subtitulo_servicios{
@@ -267,15 +273,64 @@ width: 300px;
     margin: 40px;
 }
 
-@media (min-width: 320px) and (max-width: 865px){
-   
-    .logoCabecero{
-        /* float: left; */
-        width: 150px;
-        margin:0 30px;
-        /* margin: 18px; */
-    }
+/* estilos pagina servicios.html */
 
+
+
+.parrafos-servicio{
+    color: #102067;
+    font-size: 17px;
+}
+.titulo-servicio{
+    color: #102067;
+    font-size: 35px;
+}
+
+.subtitulos-servicios{
+    font-size: 20px;
+    font-weight:bold;
+    color: #D83FD5;
+}
+
+/* Estilos portafolio.html */
+.contenedor-img-portafolio{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 500px;
+    padding: 20px;
+    grid-gap: 15px;
+}
+.img-portafolio{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-portafolio{
+    color: #102067;
+    font-size: 35px;
+    text-align: center;
+}
+.subtitulo-portafolio{
+    font-size: 20px;
+    font-weight:bold;
+    color: #D83FD5;
+}
+
+
+/**MEDIA QUERY*/
+@media (min-width: 320px) and (max-width: 865px){
+/* *INDEX  */
+.logoCabecero{
+ /* float: left; */
+width: 150px;
+margin:0 30px;
+/* margin: 18px; */
+}
+
+
+/* HADER */
     .contenedor-txt{
         margin: auto;
     }
@@ -290,7 +345,7 @@ width: 300px;
         font-size: 18px;
         margin: 0px 30px;
     }
-
+/* MENU */
     .nav__label{
         display: block;
         cursor: pointer;
@@ -314,30 +369,133 @@ width: 300px;
     .nav__input:checked + .nav__menu{
         clip-path: circle(100% at center);
     }
-
-    /* .contenedor-img{
-        display: flex;
-        width: 30%;
-        margin: auto;
-     }
-     .img{
-         width: 200px;
-         margin: 3px;
-     } */
-     
-     .imagenSobreMi{
+/* SOBREMI */
+    .imagenSobreMi{
         width: 250px;
-        margin: 20px 0px 10px 0px;
+    }
+/* SERVICIOS */
+    .servicios {
+        text-align: center;
+    }
+/* CONTACTO */
+    .contacto{
+        padding: 0px;
+        margin-bottom: 20px;
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; */
+    }
+    #contacto{
+        padding: 50px;  
+        background-color:#8CE1DF;
+        width: 40%;
+        height: 30%;
+        border-radius: 20px;
     }
     
+    #contacto label{
+        color:#102067;
+        font-weight:500px;
+        padding: 5px;
+    }
+    
+    #contacto input{
+        width: 100%;
+        height: 35px;
+        border: 1px solid #102067;
+        border-radius: 9px;
+        margin: 5px;
+    }
+    
+    /* * SERVICIOS.HTML */
+    .servicios_2{
+        margin: 30px;
+    }
+    .titulo-servicio{
+        color: #102067;
+        font-size: 20px;
+    }
+    
+    .subtitulos-servicios{
+        font-size: 15px;
+        font-weight:bold;
+        color: #D83FD5;
+    }
+    .parrafos-servicio{
+        color: #102067;
+        font-size: 15px;
+    }
 
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
+
+    /* *PORTAFOLIO.HTML */
+    .contenedor-img-portafolio{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 300px;
+        padding: 20px;
+        grid-gap: 15px;
+    }
+    .img-portafolio{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 /*tablet y portatil*/
-@media (min-width: 866px) and (max-width:1023px){
+@media (min-width: 753px) and (max-width:1023px){
 
+    .logoCabecero{
+        /* float: left; */
+       width: 200px;
+       margin:0 30px;
+       /* margin: 18px; */
+       }
+    #contacto{
+        padding: 50px;  
+        background-color:#8CE1DF;
+        width: 40%;
+        height: 60%;
+        border-radius: 20px;
+    }
+    .servicios_2{
+        margin: 40px;
+    }
+
+    /* *PORTAFOLIO.HTML */
+    .contenedor-img-portafolio{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows:500px;
+        padding: 20px;
+        grid-gap: 15px;
+    }
+    .img-portafolio{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 
 @media (min-width:1024) and (max-width:1200px){
-
+    .logoCabecero{
+        /* float: left; */
+       width: 260px;
+       margin:0 30px;
+       /* margin: 18px; */
+       }
+    #contacto{
+        padding: 50px;  
+        background-color:#8CE1DF;
+        width: 50%;
+        height: 70%;
+        border-radius: 20px;
+    }
 }
+
