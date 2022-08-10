@@ -345,6 +345,11 @@ margin:0 30px;
         cursor: pointer;
     }
 
+    .nav__img{
+        margin:5px 5px;
+        height: 30px;
+    }
+
     .nav__menu{
         position: fixed;
         top: 80px;
@@ -363,6 +368,8 @@ margin:0 30px;
     .nav__input:checked + .nav__menu{
         clip-path: circle(100% at center);
     }
+
+    
 
     .contenedor-img{
         width: 100%;
