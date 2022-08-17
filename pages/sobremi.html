@@ -5,8 +5,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link  rel="stylesheet" href="../css/estilos1.css"/>
     <link rel="icon" href="../imagenes/logo_2.png">
+    <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.css">
+    <link  rel="stylesheet" href="../css/estilos1.css"/>
     <title>sobre Mi</title>
 </head>
 <body>
@@ -40,23 +41,66 @@
         <p>Qui nam officiis eos quae consectetur assumenda deleniti, voluptatem culpa reiciendis unde vitae harum molestiae quos id tempore alias animi?</p>
         <img class="provisional" src="../imagenes/ilustración.jpg"/>
 
+       
+
+
+
+
         <h3> Skills</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere quia quod similique optio libero praesentium, maiores consequuntur ratione dolor?</p>
         <p>Qui nam officiis eos quae consectetur assumenda deleniti, voluptatem culpa reiciendis unde vitae harum molestiae quos id tempore alias animi?</p>
         <!-- agregar iconos -->
     </main>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide CarruselContenedor" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../imagenes/carrusel-3.JPG" class="d-block w-100 imagenCarrusel" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ilustración "Jardín & Conejo"</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../imagenes/carrusel-2.JPG" class="d-block w-100 imagenCarrusel" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ilustración "Querido Oso.."</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../imagenes/carrusel-1.png" class="d-block w-100 imagenCarrusel" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5> Ilustración "Mi identidad es Cristo".</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <footer class="piePagina">
+      <!-- En la parte izquierda a un lado va el logo-->
+      <div>
+          <img src="../imagenes/logo_2.png" alt="Logo_2">
+          <p class="titulofooter"> ¡Vuelve pronto!</p>
+      </div>
+      <!-- En la parte derecha al lado van los iconos de social media-->
+      <div>
+          <p> Buscame en la Web</p>
+          <a href="https://www.instagram.com/linamariawords/"><i class='bx bxl-instagram-alt iconfooter'></i></a>
+          <a href="https://www.youtube.com/channel/UCj7-mZiRitkaYNp_gMaD5gQ"><i class='bx bxl-youtube iconfooter youtube' ></i></a>
+      </div>
+  </footer>
+<script src="../bootstrap-5.2.0-dist/js/bootstrap.js"></script>
 </body>
-<footer class="piePagina">
-    <!-- En la parte izquierda a un lado va el logo-->
-    <div>
-        <img src="../imagenes/logo_2.png" alt="Logo_2">
-        <p class="titulofooter"> ¡Vuelve pronto!</p>
-    </div>
-    <!-- En la parte derecha al lado van los iconos de social media-->
-    <div>
-        <p> Buscame en la Web</p>
-        <a href="https://www.instagram.com/linamariawords/"><i class='bx bxl-instagram-alt iconfooter'></i></a>
-        <a href="https://www.youtube.com/channel/UCj7-mZiRitkaYNp_gMaD5gQ"><i class='bx bxl-youtube iconfooter youtube' ></i></a>
-    </div>
-</footer>
 </html>

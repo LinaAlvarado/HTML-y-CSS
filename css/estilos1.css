@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{padding: 0;margin: 0;}
+*{padding: 0;margin: 0;font-family:'Poppins', sans-serif;}
 
 body{
     background-color: rgb(255, 255, 255);
@@ -330,6 +330,8 @@ width: 350px;
 
 .contacto_pag{
     margin: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 /* estilos pagina servicios.html */
@@ -381,6 +383,16 @@ width: 350px;
     animation-name:animaTitulo;
     animation-duration: 6s;
     animation-iteration-count: 1;  
+}
+
+/* estilos contacto */
+.cards-Contenedor{
+display: flex;
+    justify-content: center;
+}
+
+.img-card-cont{
+margin: auto 0;
 }
 @keyframes animaTitulo{
     0%{transform:translateX(60px);}
@@ -442,6 +454,12 @@ width: 350px;
     color: #D83FD5;
 }
 
+/* sobre mi.html */
+
+.CarruselContenedor{
+width:70%;
+margin: 100px auto;
+}
 
 /**MEDIA QUERY*/
 @media (min-width: 320px) and (max-width: 865px){
@@ -526,14 +544,14 @@ margin:0 30px;
         text-align: center;
     }
 /* CONTACTO */
-    .contacto{
+    /* .contacto{
         padding: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 20px; */
         /* display: flex;
         flex-wrap: wrap;
         justify-content: space-around; */
-    }
-    #contacto{
+    /* } */
+    /* #contacto{
         padding: 50px;  
         background-color:#8CE1DF;
         width: 40%;
@@ -554,7 +572,7 @@ margin:0 30px;
         border-radius: 9px;
         margin: 5px;
     }
-    
+     */
     /* * SERVICIOS.HTML */
     .servicios_2{
         margin: 30px;
@@ -603,13 +621,13 @@ margin:0 30px;
        margin:0 30px;
        /* margin: 18px; */
        }
-    #contacto{
+    /* #contacto{
         padding: 50px;  
         background-color:#8CE1DF;
         width: 40%;
         height: 60%;
         border-radius: 20px;
-    }
+    } */
     .servicios_2{
         margin: 40px;
     }

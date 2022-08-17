@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link  rel="stylesheet" href="../css/estilos1.css"/>
+    <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos1.css" />
     <link rel="icon" href="../imagenes/logo_2.png">
     <title>Contactame</title>
 </head>
+
 <body>
     <header class="cabeza">
         <header class="cabeza">
             <nav class="nav">
                 <div class="nav__container">
-        
-                    <img class="logoCabecero" src="../imagenes/logomenu.png" alt="Logo_1"> 
-            
+
+                    <img class="logoCabecero" src="../imagenes/logomenu.png" alt="Logo_1">
+
                     <label for="menu" class="nav__label">
                         <img src="../imagenes/menu.svg" class="nav__img">
                     </label>
-            
+
                     <input type="checkbox" id="menu" class="nav__input">
-            
+
                     <div class="nav__menu">
                         <a class="nav__item" href="../index.html">Inicio</a>
                         <a class="nav__item" href="servicios.html">Servicios</a>
@@ -30,68 +33,102 @@
                         <a class="nav__item" href="contacto.html">Contacto</a>
                         <a class="nav__item" href="sobremi.html">Sobre Mi</a>
                     </div>
-        
+
                 </div>
             </nav>
         </header>
 
-    <main class="contacto_pag"> 
-        <form id="contacto"> 
-            <div class="elemento">
-                <h2 class="titulo"> Contactame</h2>
-                <div class="elemento"> 
-                <label for="name"> Nombre:</label>
-                <input type="text" id="name" placeholder="Escribe tu nombre"/>
+        <h3 class="titulo-portafolio"> Nuestros clientes opinan</h3>
+        <section class="cards-Contenedor">
+            <div class="card mb-3" style="max-width: 450px;">
+                <div class="row g-0">
+                    <div class="col-md-4 img-card-cont">
+                        <img src="../imagenes/Ellipse 1.png" class="img-fluid rounded-start " alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Lili Peréz</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="elemento"> 
-                <label for="email"> Correo:</label>
-                <input type="email" id="email" placeholder="Escribe tu Correo"/>
-                <br>
+           
+            <div class="card mb-3" style="max-width: 450px;">
+                <div class="row g-0">
+                    <div class="col-md-4 img-card-cont">
+                        <img src="../imagenes/Ellipse 5.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-    
-            <div class="elemento">
-                <label for="Mensaje"> Mensaje:</label>
-                    <input type="text" id="mensaje"/>
-            </div>
-    
-            <button class="boton">Enviar Mensaje </button> 
-                <!-- <img src="" alt="No se que imagen poner aún">  -->
-        </form>
-     
-    </main>
-    <section class="contacto_pag"> 
-        <h3> Nuestros clientes opinan</h3>
-        <!-- cards que salga la imagen del usuario y su comentario -->
 
-        <div>
-            <img src="" alt="Foto de usuario">        
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Minima quibusdam adipisci libero tempore neque aperiam esse cum reiciendis iure illum.</p>
-        </div>
-        <div>
-            <img src="" alt="Foto de usuario">        
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Minima quibusdam adipisci libero tempore neque aperiam esse cum reiciendis iure illum.</p>
-        </div>
-        <div>
-            <img src="" alt="Foto de usuario">        
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Minima quibusdam adipisci libero tempore neque aperiam esse cum reiciendis iure illum.</p>
-        </div>
+            <div class="card mb-3" style="max-width: 450px;">
+                <div class="row g-0">
+                    <div class="col-md-4 img-card-cont">
+                        <img src="../imagenes/Ellipse 6.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <main class="contacto_pag">
+            <form id="contacto">
+                <div class="elemento">
+                    <h2 class="titulo"> Contactame</h2>
+                    <div class="elemento">
+                        <label for="name"> Nombre:</label>
+                        <input type="text" id="name" placeholder="Escribe tu nombre" />
+                    </div>
+
+                    <div class="elemento">
+                        <label for="email"> Correo:</label>
+                        <input type="email" id="email" placeholder="Escribe tu Correo" />
+                        <br>
+                    </div>
+
+                    <div class="elemento">
+                        <label for="Mensaje"> Mensaje:</label>
+                        <input type="text" id="mensaje" />
+                    </div>
+
+                    <button class="boton">Enviar Mensaje </button>
+                    <!-- <img src="" alt="No se que imagen poner aún">  -->
+            </form>
+
+        </main>
+        <footer class="piePagina">
+            <!-- En la parte izquierda a un lado va el logo-->
+            <div>
+                <img src="../imagenes/logo_2.png" alt="Logo_2">
+                <p class="titulofooter"> ¡Vuelve pronto!</p>
+            </div>
+            <!-- En la parte derecha al lado van los iconos de social media-->
+            <div>
+                <p> Buscame en la Web</p>
+                <a href="https://www.instagram.com/linamariawords/"><i class='bx bxl-instagram-alt iconfooter'></i></a>
+                <a href="https://www.youtube.com/channel/UCj7-mZiRitkaYNp_gMaD5gQ"><i
+                        class='bx bxl-youtube iconfooter youtube'></i></a>
+            </div>
+        </footer>
+        <script src="../bootstrap-5.2.0-dist/js/bootstrap.js"></script>
 </body>
-<footer class="piePagina">
-    <!-- En la parte izquierda a un lado va el logo-->
-    <div>
-        <img src="../imagenes/logo_2.png" alt="Logo_2">
-        <p class="titulofooter"> ¡Vuelve pronto!</p>
-    </div>
-    <!-- En la parte derecha al lado van los iconos de social media-->
-    <div>
-        <p> Buscame en la Web</p>
-        <a href="https://www.instagram.com/linamariawords/"><i class='bx bxl-instagram-alt iconfooter'></i></a>
-        <a href="https://www.youtube.com/channel/UCj7-mZiRitkaYNp_gMaD5gQ"><i class='bx bxl-youtube iconfooter youtube' ></i></a>
-    </div>
-</footer>
+
 </html>
