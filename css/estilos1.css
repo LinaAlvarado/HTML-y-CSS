@@ -386,7 +386,10 @@ width: 350px;
 }
 
 /* estilos contacto */
-
+.cards-Contenedor{
+    display: flex;
+    justify-content: center;
+    }
 
 .img-card-cont{
 margin: auto 0;
