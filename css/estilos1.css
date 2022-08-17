@@ -388,7 +388,7 @@ width: 350px;
 /* estilos contacto */
 .cards-Contenedor{
 display: flex;
-    justify-content: center;
+justify-content: center;
 }
 
 .img-card-cont{
