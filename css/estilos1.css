@@ -317,11 +317,19 @@ margin: 10px;
 padding: 10px;
 transition: all 2s ease;
 width: 350px;
-
 }
 
+
 .portafolio-card{
-    margin: 40px;
+    margin: 50px;
+}
+
+.portafolio-card img{
+    border-radius: 20px;
+    box-shadow:
+    11.1px 8.2px 26.7px rgba(0, 0, 0, 0.096),
+    42px 31px 213px rgba(0, 0, 0, 0.07)
+  ;
 }
 
 .sobremi_pag{
@@ -384,7 +392,14 @@ width: 350px;
     animation-duration: 6s;
     animation-iteration-count: 1;  
 }
-
+@keyframes animaTitulo{
+    0%{transform:translateX(60px);}
+    
+    30%{}
+    
+    100%{}
+    
+    }
 /* estilos contacto */
 .cards-Contenedor{
     display: flex;
@@ -394,14 +409,11 @@ width: 350px;
 .img-card-cont{
 margin: auto 0;
 }
-@keyframes animaTitulo{
-    0%{transform:translateX(60px);}
-    
-    30%{}
-    
-    100%{}
-    
-    }
+
+.margen{
+    margin-top:50px;
+}
+
 .parrafo-proyecto{
     font-size: 18px;
     padding-top: 20px;
@@ -447,6 +459,7 @@ margin: auto 0;
     color: #102067;
     font-size: 35px;
     text-align: center;
+    font-weight: bolder;
 }
 .subtitulo-portafolio{
     font-size: 20px;
@@ -461,7 +474,58 @@ width:70%;
 margin: 100px auto;
 }
 
-/**MEDIA QUERY*/
+.titulo-sobremi{
+    color: #102067;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.contenedor-sobremi{
+   
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+.contenedor-sobremi img{
+   width: 500px;
+   /* margin-right:100px; */
+   border-radius: 20px;
+}
+
+.contenedor-texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitulos-sobremi{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #D83FD5;
+}
+
+.icono-herramienta{
+    width: 60px;
+    margin: 10px;
+}
+
+.lo-ow{
+    width: 160px;
+}
+
+.contenedor-herramientas{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.contenedor-main-herramientas{
+   margin: 0px 145px;
+}
+/**MEDIA QUERY*/ 
 @media (min-width: 320px) and (max-width: 865px){
 /* *INDEX  */
 .logoCabecero{
