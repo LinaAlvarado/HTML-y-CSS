@@ -1,13 +1,21 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* *{padding: 0;margin: 0;font-family:'Poppins', sans-serif;} */
+*{padding: 0;margin: 0;font-family:'Poppins', sans-serif;}
 
-/* body{
+$azulTurqui: #102067;
+$azulTurquiBrillante: #193DDB;
+$amarilloSuave: #FFE6AF;
+$amarilloFuerte: #EDAB11;
+$azulSuave: #8CE1DF;
+$azulSubido: #09D0CB;
+$Fucsia: #D83FD5;
+
+body{
     background-color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
-} */ 
+}
 /* áreas */
-/* #areas{
+#areas{
     display: grid;
     grid-template-areas: 
         "nav"
@@ -37,12 +45,12 @@ section.contacto{
 }
 section.footer{
     grid-area: footer;
-} */
+}
 
 
 /* menu */
 
-/* .logoCabecero{
+.logoCabecero{
     width: 260px;
     margin:0 30px;
 }
@@ -56,7 +64,7 @@ section.footer{
 }
 .nav{
     height: 80px;
-    color: #102067;
+    color: $azulTurqui;
     background-color: #fff;
 }
 
@@ -73,44 +81,36 @@ section.footer{
     padding: 20px;
 }
 .nav__item{
-    color: #102067;
+    color:$azulTurqui;
     font-weight: 600;
     text-decoration: none;
 }
 .nav__item:hover{
-    color:#09D0CB;
-} */
+    color:$azulSubido;
+}
 
 
 /* header */
-/* .header{
+.header{
     background-color: #fff0d0;
     padding: 0px;
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-} */
+}
 /* txt */
-/* .contenedor-txt{
+.contenedor-txt{
     margin: auto;
     animation-name:anima;
     animation-duration: 7s;
     animation-iteration-count: 1;  
 }
-.tituloIndex{
-    font-size:40px;
-    color:#102067;
-   
-}
 
-#parrafoIndex{
-    color:#102067;
-    margin: auto;
-    font-size: 20px;
-} */
+
+
 /* img */
-/* .contenedor-img{
+.contenedor-img{
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -122,11 +122,11 @@ section.footer{
     width: 100%;
     height: 100%;
     object-fit: cover;
-} */
+}
 
 
 /* sobremi */
-/* .sobremi{
+.sobremi{
     background-color:#ffffff;
     display: flex;
     flex-wrap: wrap;
@@ -155,25 +155,24 @@ section.footer{
 .textoC_Sobremi{
     display: inline-block;
     margin: auto 0;
-} */
+}
 
 
 /* servicios */
-/* .servicios {
+.servicios{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
 }
 .titulo-servicio-index{
-    color: #102067;
+    color:$azulTurqui;
     text-align: center;
     
-} */
+}
 
-
-/* .subtitulo_servicios{
+.subtitulo_servicios{
     font-weight: 600;
-    color: #102067;
+    color:$azulTurqui;
 }
 
 .card{
@@ -186,20 +185,18 @@ section.footer{
     transition: all 1s;
 }
 
-
-
 .card:hover{
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
     transform: translate(0px, -20px);
 }
 
 i{
-    color:#D83FD5;
+    color:$Fucsia;
     font-size: 60px;
-} */
+}
 /* contacto */
 
-/* .elemento{
+.elemento{
     padding:5px 0;
 }
 .contacto{
@@ -215,20 +212,20 @@ i{
     height: 75%;
     display: block;
     border-radius: 20px;
-}
 
-#contacto label{
-    color:#102067;
-    font-weight:500px;
-    padding: 5px;
-}
+    label{
+        color:#102067;
+        font-weight:500px;
+        padding: 5px;
+    }
 
-#contacto input{
-    width: 100%;
-    height: 35px;
-    border: 1px solid #102067;
-    border-radius: 9px;
-    margin: 5px;
+    input{
+        width: 100%;
+        height: 35px;
+        border: 1px solid #102067;
+        border-radius: 9px;
+        margin: 5px;
+    }
 }
 
 ::placeholder{
@@ -260,9 +257,9 @@ i{
     border: none;
     font-weight: bolder;
     color: #102067;
-} */
+}
 /* footer */
-/* .footer{
+.footer{
     font-size: 20PX;
     font-weight: 600;
 }
@@ -285,19 +282,19 @@ font-weight:bolder;
 
 .iconfooter:hover{
     color:#09D0CB;
-} */
+}
 
 /* index.html > servicios */
 
-/* .servicios_2{
+.servicios_2{
     margin: 80px;
 }
 
 .subtitulo_servicios{
     font-weight: 600;
     color: #102067;
-} */
-/* .grid-img-servicios{
+}
+.grid-img-servicios{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -320,11 +317,11 @@ width: 350px;
     margin: 40px;
     display: flex;
     justify-content: center;
-} */
+}
 
 /* estilos pagina servicios.html */
 
-/* .contenedor_img_servicios{
+.contenedor_img_servicios{
     height: 350px;
     width: 350px;
     overflow: hidden;
@@ -335,13 +332,19 @@ width: 350px;
     width: 400px;
 }
 
+
+@mixin colorYtamaño($color, $fontSize){
+    color: $color;
+    font-size: $fontSize;
+} 
 .parrafos-servicio{
-    color: #102067;
-    font-size: 17px;
+    @include colorYtamaño($azulTurqui, 17px)
 }
 .titulo-servicio{
-    color: #102067;
-    font-size: 35px;
+    @include colorYtamaño($azulTurqui, 35px)
+}
+.tituloIndex{
+    @include colorYtamaño($azulTurqui, 40px)
 }
 
 .subtitulos-servicios{
@@ -353,10 +356,11 @@ width: 350px;
 .video{
     width: 90%;
     margin: 30px;
-} */
+    /* width:800px; */
+}
 
 /* Estilos portafolio.html */
-/* .contenedor-img-portafolio{
+.contenedor-img-portafolio{
     width: 95%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -380,9 +384,9 @@ width: 350px;
     
     100%{}
     
-    } */
+    }
 /* estilos contacto */
-/* .cards-Contenedor{
+.cards-Contenedor{
     display: flex;
     flex-flow:row wrap;
     justify-content: center;
@@ -437,6 +441,17 @@ margin: auto 0;
 }
 
 
+/* .img-portafolio:hover{
+    agregar estilos al pasar por la imagen de portafolio
+    
+} */
+
+@mixin subtitulosYtitulos( $color, $tamañoLetra, $pesoLetra) {
+    color:$color;
+    font-size: $tamañoLetra;
+    font-weight: $pesoLetra;
+    
+}
 .titulo-portafolio{
     color: #102067;
     font-size: 35px;
@@ -444,26 +459,22 @@ margin: auto 0;
     font-weight: bolder;
 }
 .subtitulo-portafolio{
-    font-size: 20px;
-    font-weight:bold;
-    color: #D83FD5;
-} */
+    @include subtitulosYtitulos($Fucsia, 20px, bold)
+}
 
 /* sobre mi.html */
-
-/* .CarruselContenedor{
+.titulo-sobremi{
+    @include subtitulosYtitulos($azulTurqui, 35px, bolder)
+}
+.CarruselContenedor{
 width:70%;
 margin: 100px auto;
 }
 
-.titulo-sobremi{
-    color: #102067;
-    font-size: 35px;
-    font-weight: bolder;
-}
+
 
 .contenedor-sobremi{
-   background-color: #09D0CB;
+    background-color: #09D0CB;
     display:flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -510,22 +521,23 @@ border-radius: 20px;
     width: 300px;
     }
     
+
+
 .card-title{
 color: #102067;
 font-weight: bolder;
 }
 
 .titulo{
-    color: #102067;
-    font-weight: bolder;
+    @extend .card-title
 }
 
 .card-text{
 color: #102067;
-} */
+}
 
 /* CONTACTO.HTML */
-/* .card-contacto{
+.card-contacto{
     background-color:#fff0d0;
     border-radius: 20px;
     text-align: center;
@@ -534,19 +546,19 @@ color: #102067;
     margin: 40px;
     transition: all 1s;
 }
- */
+
 
 
 /**MEDIA QUERY*/ 
-/* @media (min-width: 320px) and (max-width: 865px){ */
+@media (min-width: 320px) and (max-width: 865px){
 
 /* *INDEX  */
-/* .logoCabecero{
+.logoCabecero{
 width: 200px;
 margin:0 30px;
-} */
+}
 /* HADER */
-    /* .contenedor-txt{
+    .contenedor-txt{
         margin: auto;
     }
     .tituloIndex{
@@ -556,12 +568,11 @@ margin:0 30px;
     }
     #parrafoIndex{
         color:#102067;
-        margin: auto;
         font-size: 18px;
         margin: 0px 30px;
-    } */
+    }
 /* MENU */
-    /* .nav__label{
+    .nav__label{
         display: block;
         cursor: pointer;
     }
@@ -603,19 +614,18 @@ margin:0 30px;
         height: 100%;
         object-fit: cover;
     }
-     */
+    
     
 /* SOBREMI */
-    /* .imagenSobreMi{
+    .imagenSobreMi{
         width: 250px;
-    } */
+    }
 /* SERVICIOS */
-    /* .servicios {
+    .servicios {
         text-align: center;
-    } */
-
+    }
     /* * SERVICIOS.HTML */
-    /* .servicios_2{
+    .servicios_2{
         margin: 30px;
     }
     .titulo-servicio{
@@ -636,10 +646,10 @@ margin:0 30px;
     iframe{
         width: 300px;
         height: 200px;
-    } */
+    }
 
     /* *PORTAFOLIO.HTML */
-    /* .portafolio-card{
+    .portafolio-card{
         width: 100%;
     }
     .descripcion-proyecto{
@@ -658,10 +668,10 @@ margin:0 30px;
     .img-portafolio{
         width: 100%;
         object-fit: cover;
-    } */
+    }
 
     /** CONTACTO.HTML */
-    /* .titulo-portafolio{
+    .titulo-portafolio{
         font-size: 25px;
     }
 
@@ -677,33 +687,45 @@ margin:0 30px;
         display: block;
         border-radius: 20px;
     }
-     */
+    
    
         
     /* *SOBRE MI.HTML */
 
-    /* .sobremi_pag{
+    .sobremi_pag{
         margin: 18px;
         background-color: #102067;
     }
 
     .img-sobremi-main{
+        /* margin: 10px;
+        padding: 10px; */
+        /* transition: all 2s ease; */
         width:10px;
         }
-} */
+}
 /*tablet y portatil*/
-/* @media (min-width: 753px) and (max-width:1023px){
+@media (min-width: 753px) and (max-width:1023px){
 
     .logoCabecero{
+    /* float: left; */
     width: 200px;
     margin:0 30px;
+    /* margin: 18px; */
     }
+    /* #contacto{
+        padding: 50px;  
+        background-color:#8CE1DF;
+        width: 40%;
+        height: 60%;
+        border-radius: 20px;
+    } */
     .servicios_2{
         margin: 40px;
-    } */
+    }
 
     /* *PORTAFOLIO.HTML */
-    /* .contenedor-img-portafolio{
+    .contenedor-img-portafolio{
         width: 90%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -716,20 +738,23 @@ margin:0 30px;
         height: 100%;
         object-fit: cover;
     }
-} */
+}
 
-/* 
+
 @media (min-width:1024) and (max-width:1200px){
     .logoCabecero{
+    /* float: left; */
     width: 260px;
     margin:0 30px;
+    /* margin: 18px; */
     }
 
     #contacto{
         padding: 50px;  
+        /* background-color:#8CE1DF; */
         width: 50%;
         height: 70%;
         border-radius: 20px;
     }
 }
-  */
+
