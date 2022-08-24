@@ -160,9 +160,6 @@ section.footer{
     margin: auto 0;
 }
 
-.titulo{
-    color: #102067;
-}
 
 /* servicios */
 .servicios {
@@ -196,10 +193,13 @@ section.footer{
     transition: all 1s;
 }
 
+
+
 .card:hover{
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
     transform: translate(0px, -20px);
 }
+
 i{
     color:#D83FD5;
     font-size: 60px;
@@ -218,8 +218,8 @@ i{
 }
 #contacto{
     padding: 30px;  
-    background-color:#fff0d0;
-    width: 30%;
+    /* background-color:#fff0d0; */
+    width: 40%;
     height: 75%;
     display: block;
     border-radius: 20px;
@@ -235,7 +235,7 @@ i{
     width: 100%;
     height: 35px;
     border: 1px solid #102067;
-    background-color: #fff0d0;
+    /* background-color: #fff0d0; */
     border-radius: 9px;
     margin: 5px;
 }
@@ -323,21 +323,17 @@ transition: all 2s ease;
 width: 350px;
 }
 
-
-.portafolio-card{
-    margin: 50px;
-}
-
-.portafolio-card img{
+/* .portafolio-card img{
     border-radius: 20px;
     box-shadow:
     11.1px 8.2px 26.7px rgba(0, 0, 0, 0.096),
     42px 31px 213px rgba(0, 0, 0, 0.07)
-  ;
-}
+;
+} */
 
 .sobremi_pag{
     margin: 40px;
+    background-color: #102067;
 }
 
 .contacto_pag{
@@ -409,6 +405,7 @@ width: 350px;
 /* estilos contacto */
 .cards-Contenedor{
     display: flex;
+    flex-flow:row wrap;
     justify-content: center;
     }
 
@@ -454,7 +451,12 @@ margin: auto 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
+    box-shadow:
+    11.1px 8.2px 26.7px rgba(0, 0, 0, 0.096),
+    42px 31px 213px rgba(0, 0, 0, 0.07)
 }
+
 
 /* .img-portafolio:hover{
     agregar estilos al pasar por la imagen de portafolio
@@ -487,23 +489,23 @@ margin: 100px auto;
 }
 
 .contenedor-sobremi{
-   
+   background-color: #09D0CB;
     display:flex;
-    flex-direction: row;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .contenedor-sobremi img{
-   width: 500px;
-   /* margin-right:100px; */
-   border-radius: 20px;
+width: 500px;
+/* margin-right:100px; */
+border-radius: 20px;
 }
 
 .contenedor-texto{
-    width: 50%;
+    width: 50%; 
     display: flex;
     flex-direction: column;
+    background-color: #8CE1DF;
     justify-content: center;
 }
 
@@ -511,6 +513,7 @@ margin: 100px auto;
     font-size: 30px;
     font-weight: bolder;
     color: #D83FD5;
+    margin: 0;
 }
 
 .icono-herramienta{
@@ -524,24 +527,59 @@ margin: 100px auto;
 
 .contenedor-herramientas{
     display:flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     
 }
-
+.img-sobremi-main{
+    margin: 10px;
+    padding: 10px;
+    transition: all 2s ease;
+    width: 300px;
+    }
+    
 .contenedor-main-herramientas{
-   margin: 0px 145px;
+/* margin: 0px 145px; */
+
 }
+
+.card-title{
+color: #102067;
+font-weight: bolder;
+}
+
+.titulo{
+    color: #102067;
+    font-weight: bolder;
+}
+
+.card-text{
+color: #102067;
+}
+
+/* CONTACTO.HTML */
+.card-contacto{
+    background-color:#fff0d0;
+    border-radius: 20px;
+    text-align: center;
+    display:flex;
+    /* margin-left: 40px; */
+    padding:30px;
+    margin: 40px;
+    transition: all 1s;
+}
+
+
+
 /**MEDIA QUERY*/ 
 @media (min-width: 320px) and (max-width: 865px){
+
 /* *INDEX  */
 .logoCabecero{
  /* float: left; */
-width: 150px;
+width: 200px;
 margin:0 30px;
 /* margin: 18px; */
 }
-
-
 /* HADER */
     .contenedor-txt{
         margin: auto;
@@ -550,7 +588,6 @@ margin:0 30px;
         font-size: 25px;
         color:#102067;
         margin:0px 30px;
-       
     }
     #parrafoIndex{
         color:#102067;
@@ -587,8 +624,6 @@ margin:0 30px;
     .nav__input:checked + .nav__menu{
         clip-path: circle(100% at center);
     }
-
-    
 
     .contenedor-img{
         width: 100%;
@@ -668,29 +703,70 @@ margin:0 30px;
     }
 
     /* *PORTAFOLIO.HTML */
+    .portafolio-card{
+        width: 100%;
+    }
+    .descripcion-proyecto{
+        width: 100%;
+        margin-top: 40px;
+    }
     .contenedor-img-portafolio{
-        width: 90%;
+        width: 80%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 300px;
+        grid-auto-rows:430px;
         padding: 20px;
+        margin: 30px auto;
         grid-gap: 15px;
     }
     .img-portafolio{
         width: 100%;
-        height: 100%;
         object-fit: cover;
     }
+
+    /** CONTACTO.HTML */
+    .titulo-portafolio{
+        font-size: 25px;
+    }
+
+    .img-margen{
+        margin-bottom: 15px;
+    }
+
+    #contacto{
+        padding: 10px;  
+        background-color:#ffffff;
+        width:100%;
+        height: 75%;
+        display: block;
+        border-radius: 20px;
+    }
+    
+   
+        
+    /* *SOBRE MI.HTML */
+
+    .sobremi_pag{
+        margin: 18px;
+        background-color: #102067;
+    }
+
+    .img-sobremi-main{
+        /* margin: 10px;
+        padding: 10px; */
+        /* transition: all 2s ease; */
+        width:10px;
+        }
 }
 /*tablet y portatil*/
 @media (min-width: 753px) and (max-width:1023px){
 
     .logoCabecero{
-        /* float: left; */
-       width: 200px;
-       margin:0 30px;
-       /* margin: 18px; */
-       }
+    /* float: left; */
+    width: 200px;
+    margin:0 30px;
+    /* margin: 18px; */
+    }
     /* #contacto{
         padding: 50px;  
         background-color:#8CE1DF;
@@ -721,14 +797,15 @@ margin:0 30px;
 
 @media (min-width:1024) and (max-width:1200px){
     .logoCabecero{
-        /* float: left; */
-       width: 260px;
-       margin:0 30px;
-       /* margin: 18px; */
-       }
+    /* float: left; */
+    width: 260px;
+    margin:0 30px;
+    /* margin: 18px; */
+    }
+
     #contacto{
         padding: 50px;  
-        background-color:#8CE1DF;
+        /* background-color:#8CE1DF; */
         width: 50%;
         height: 70%;
         border-radius: 20px;
