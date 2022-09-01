@@ -1,7 +1,7 @@
 {
   "name": "desafioscoder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto de pagina web para coderhouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/LinaAlvarado/My-Web.git"
   },
-  "author": "",
+  "author": "Lina Alvarado",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LinaAlvarado/My-Web/issues"

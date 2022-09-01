@@ -7,8 +7,7 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
-  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
 }
 
 /* áreas */
@@ -62,11 +61,11 @@ section.footer {
 .nav {
   height: 80px;
   color: #102067;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .nav__input:checked + .nav__menu {
-  background-color: #fff0d0;
+  background-color: #FFE6AF;
 }
 
 .nav__label, .nav__input {
@@ -91,7 +90,7 @@ section.footer {
 
 /* header */
 .header {
-  background-color: #fff0d0;
+  background-color: #FFE6AF;
   padding: 0px;
   margin-bottom: 20px;
   display: flex;
@@ -170,7 +169,7 @@ section.footer {
 }
 
 .card {
-  background-color: #fff0d0;
+  background-color: #FFE6AF;
   border-radius: 20px;
   text-align: center;
   display: inline-block;
@@ -189,10 +188,6 @@ i {
 }
 
 /* contacto */
-.elemento {
-  padding: 5px 0;
-}
-
 .contacto {
   padding: 0px;
   margin-bottom: 20px;
@@ -225,7 +220,7 @@ i {
   padding: 0 6px;
   font-size: 12px;
   font-family: "poppins";
-  color: #0a164a;
+  color: #102067;
 }
 
 #titulo-contacto {
@@ -264,7 +259,7 @@ i {
 
 .piePagina {
   background-color: #102067;
-  color: white;
+  color: #EDAB11;
   text-align: center;
   padding: 30px;
 }
@@ -492,7 +487,7 @@ i {
 
 /* CONTACTO.HTML */
 .card-contacto {
-  background-color: #fff0d0;
+  background-color: #FFE6AF;
   border-radius: 20px;
   text-align: center;
   display: flex;
@@ -506,12 +501,8 @@ i {
   /* *INDEX  */
   .logoCabecero {
     width: 200px;
-    margin: 0 30px;
   }
   /* HADER */
-  .contenedor-txt {
-    margin: auto;
-  }
   .tituloIndex {
     font-size: 25px;
     color: #102067;
@@ -535,8 +526,8 @@ i {
     position: fixed;
     top: 80px;
     bottom: 0;
-    background-color: #fff0d0;
-    color: #fff;
+    background-color: #FFE6AF;
+    color: #ffffff;
     width: 100%;
     left: 0;
     display: flex;
@@ -570,7 +561,7 @@ i {
   .servicios {
     text-align: center;
   }
-  /* * SERVICIOS.HTML */
+  /* SERVICIOS.HTML */
   .servicios_2 {
     margin: 30px;
   }
@@ -642,7 +633,6 @@ i {
 @media (min-width: 753px) and (max-width: 1023px) {
   .logoCabecero {
     width: 200px;
-    margin: 0 30px;
   }
   .servicios_2 {
     margin: 40px;
@@ -665,7 +655,6 @@ i {
 @media (min-width: 1024) and (max-width: 1200px) {
   .logoCabecero {
     width: 260px;
-    margin: 0 30px;
   }
   #contacto {
     padding: 50px;

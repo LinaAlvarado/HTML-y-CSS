@@ -1,0 +1,208 @@
+/**MEDIA QUERY*/ 
+$azulTurqui: #102067;
+$azulTurquiBrillante: #193DDB;
+$amarilloSuave: #FFE6AF;
+$amarilloFuerte: #EDAB11;
+$azulSuave: #8CE1DF;
+$azulSubido: #09D0CB;
+$Fucsia: #D83FD5;
+$blanco: #ffffff;
+
+@media (min-width: 320px) and (max-width: 865px){
+
+    /* *INDEX  */
+    .logoCabecero{
+    width: 200px;
+    }
+
+    /* HADER */
+
+    .tituloIndex{
+        font-size: 25px;
+        color:$azulTurqui;
+        margin:0px 30px;
+    }
+    
+    #parrafoIndex{
+        color:$azulTurqui;
+        font-size: 18px;
+        margin: 0px 30px;
+    }
+    
+    /* MENU */
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav__img{
+        margin:5px 5px;
+        height: 30px;
+        }
+    
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background-color:$amarilloSuave;
+        color:$blanco;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+    }
+    
+    .contenedor-img{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 300px;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+    
+    .img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* SOBREMI */
+    .imagenSobreMi{
+        width: 250px;
+    }
+    
+    /* SERVICIOS */
+    .servicios {
+        text-align: center;
+    }
+    
+    /* SERVICIOS.HTML */
+    .servicios_2{
+        margin: 30px;
+    }
+    
+    @mixin subtituloTitulos($colores, $tamañodeletra){
+        color: $colores;
+        font-size: $tamañodeletra;
+    }
+
+    .titulo-servicio{
+        @include subtituloTitulos($azulTurqui, 20px)
+    }
+    
+    .subtitulos-servicios{
+        font-size: 15px;
+        font-weight:bold;
+        color: $Fucsia;
+    }
+    .parrafos-servicio{
+        @include subtituloTitulos($azulTurqui, 15px)
+    }
+    
+        iframe{
+            width: 300px;
+            height: 200px;
+        }
+    
+        /* *PORTAFOLIO.HTML */
+        .portafolio-card{
+            width: 100%;
+        }
+        .descripcion-proyecto{
+            width: 100%;
+            margin-top: 40px;
+        }
+        .contenedor-img-portafolio{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows:430px;
+            padding: 20px;
+            margin: 30px auto;
+            grid-gap: 15px;
+        }
+        .img-portafolio{
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        /** CONTACTO.HTML */
+        .titulo-portafolio{
+            font-size: 25px;
+        }
+    
+        .img-margen{
+            margin-bottom: 15px;
+        }
+    
+        #contacto{
+            padding: 10px;  
+            background-color:$blanco;
+            width:100%;
+            height: 75%;
+            display: block;
+            border-radius: 20px;
+        }
+
+        /* *SOBRE MI.HTML */
+        .sobremi_pag{
+            margin: 20px;
+        }
+        .contenedor-texto{
+            width: 100%;
+        }
+    
+        .img-sobremi-main{
+            width: 90%;
+        }
+    }
+    /*tablet y portatil*/
+    @media (min-width: 753px) and (max-width:1023px){
+    
+        .logoCabecero{
+        width: 200px;
+        }
+    
+        .servicios_2{
+            margin: 40px;
+        }
+    
+        /* *PORTAFOLIO.HTML */
+        .contenedor-img-portafolio{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows:500px;
+            padding: 20px;
+            grid-gap: 15px;
+        }
+        .img-portafolio{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    
+    @media (min-width:1024) and (max-width:1200px){
+    .logoCabecero{
+        width: 260px;
+    }
+    
+    #contacto{
+            padding: 50px;  
+            width: 50%;
+            height: 70%;
+            border-radius: 20px;
+    }
+    }
+    

@@ -17,121 +17,111 @@
 <body>
 
     <!-- Menu -->
-
     <header class="cabeza">
-        <header class="cabeza">
-            <nav class="nav">
-                <div class="nav__container">
+        <nav class="nav">
+            <div class="nav__container">
+                <img class="logoCabecero" src="../imagenes/logomenu.png" alt="Logo_1">
 
-                    <img class="logoCabecero" src="../imagenes/logomenu.png" alt="Logo_1">
+                <label for="menu" class="nav__label">
+                    <img src="../imagenes/menu.svg" class="nav__img">
+                </label>
 
-                    <label for="menu" class="nav__label">
-                        <img src="../imagenes/menu.svg" class="nav__img">
-                    </label>
+                <input type="checkbox" id="menu" class="nav__input">
 
-                    <input type="checkbox" id="menu" class="nav__input">
-
-                    <div class="nav__menu">
-                        <a class="nav__item" href="../index.html">Inicio</a>
-                        <a class="nav__item" href="servicios.html">Servicios</a>
-                        <a class="nav__item" href="portafolio.html">Portafolio</a>
-                        <a class="nav__item" href="contacto.html">Contacto</a>
-                        <a class="nav__item" href="sobremi.html">Sobre Mi</a>
-                    </div>
-
+                <div class="nav__menu">
+                    <a class="nav__item" href="../index.html">Inicio</a>
+                    <a class="nav__item" href="servicios.html">Servicios</a>
+                    <a class="nav__item" href="portafolio.html">Portafolio</a>
+                    <a class="nav__item" href="contacto.html">Contacto</a>
+                    <a class="nav__item" href="sobremi.html">Sobre Mi</a>
                 </div>
-            </nav>
-        </header>
 
-        <!-- Cards clientes -->
-        <h1 class="titulo-portafolio margen"> Nuestros clientes opinan.</h1>
-        <section class="cards-Contenedor">
-            <div class="card-contacto mb-3" style="max-width: 450px;">
-                <div class="row g-0">
-                    <div class="col-md-4 img-card-cont">
-                        <img src="../imagenes/Ellipse 1.png" class="img-margen img-fluid rounded-start " alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Lili Peréz</h5>
-                            <p class="card-text">Gracias por la ilustración! Me encantó cada uno de los detalles.</p>
-                        </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cards clientes Boostrap -->
+    <h1 class="titulo-portafolio margen"> Nuestros clientes opinan.</h1>
+    <section class="cards-Contenedor">
+        <div class="card-contacto mb-3" style="max-width: 450px;">
+            <div class="row g-0">
+                <div class="col-md-4 img-card-cont">
+                    <img src="../imagenes/Ellipse 1.png" class="img-margen img-fluid rounded-start " alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Lili Peréz</h5>
+                        <p class="card-text">Gracias por la ilustración! Me encantó cada uno de los detalles.</p>
                     </div>
                 </div>
             </div>
-            <div class="card-contacto mb-3" style="max-width: 450px;">
-                <div class="row g-0">
-                    <div class="col-md-4 img-card-cont">
-                        <img src="../imagenes/Ellipse 5.png" class="img-margen img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Maria José</h5>
-                            <p class="card-text">Me encanto mi logo, Quedó más lindo de lo que esperaba! Gracias a ti, ya puedo 
-                                empezar mi negocio de forma más cool
-                            </p>
-                        </div>
+        </div>
+
+        <div class="card-contacto mb-3" style="max-width: 450px;">
+            <div class="row g-0">
+                <div class="col-md-4 img-card-cont">
+                    <img src="../imagenes/Ellipse 5.png" class="img-margen img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Maria José</h5>
+                        <p class="card-text">Me encanto mi logo, Quedó más lindo de lo que esperaba! Gracias a ti, ya puedo 
+                        empezar mi negocio de forma más cool</p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="card-contacto mb-3" style="max-width: 450px;">
-                <div class="row g-0">
-                    <div class="col-md-4 img-card-cont">
-                        <img src="../imagenes/Ellipse 6.png" class="img-margen img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Juan Manuel</h5>
-                            <p class="card-text">Muchas gracias por tu trabajo! se nota la calidad, dedicación y esfuerzo con el que haces las cosas</p>
-                        </div>
+        <div class="card-contacto mb-3" style="max-width: 450px;">
+            <div class="row g-0">
+                <div class="col-md-4 img-card-cont">
+                    <img src="../imagenes/Ellipse 6.png" class="img-margen img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Juan Manuel</h5>
+                        <p class="card-text">Muchas gracias por tu trabajo! se nota la calidad, dedicación y esfuerzo con el que haces las cosas</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Formulario de contacto -->
+    <!-- Formulario de contacto -->
 
-        <main class="contacto_pag">
-            <form id="contacto">
-                <div class="elemento">
+    <main class="contacto_pag">
+        <form id="contacto">
                     <h2 class="titulo"> Contactame</h2>
-                    <div class="elemento">
+                    <div>
                         <label for="name"> Nombre:</label>
                         <input type="text" id="name" placeholder="Escribe tu nombre" />
                     </div>
 
-                    <div class="elemento">
+                    <div>
                         <label for="email"> Correo:</label>
                         <input type="email" id="email" placeholder="Escribe tu Correo" />
                         <br>
                     </div>
 
-                    <div class="elemento">
+                    <div>
                         <label for="Mensaje"> Mensaje:</label>
                         <input type="text" id="mensaje" />
                     </div>
 
                     <button class="boton">Enviar Mensaje </button>
-                    <!-- <img src="" alt="No se que imagen poner aún">  -->
-            </form>
+        </form>
+    </main>
 
-        </main>
-        <footer class="piePagina">
-            <div>
-                <img src="../imagenes/logo_2.png" alt="Logo_2">
-                <p class="titulofooter"> ¡Vuelve pronto!</p>
-            </div>
-        
-            <div>
-                <p> Buscame en la Web</p>
-                <a href="https://www.instagram.com/linamariawords/"><i class='bx bxl-instagram-alt iconfooter'></i></a>
-                <a href="https://www.youtube.com/channel/UCj7-mZiRitkaYNp_gMaD5gQ"><i
-                        class='bx bxl-youtube iconfooter youtube'></i></a>
-            </div>
-
-        </footer>
-        <script src="../bootstrap-5.2.0-dist/js/bootstrap.js"></script>
-        
+    <footer class="piePagina">
+        <div>
+            <img src="../imagenes/logo_2.png" alt="Logo_2">
+            <p class="titulofooter"> ¡Vuelve pronto!</p>
+        </div>
+        <div>
+            <p> Buscame en la Web</p>
+            <a href="https://www.instagram.com/linamariawords/"><i class='bx bxl-instagram-alt iconfooter'></i></a>
+            <a href="https://www.youtube.com/channel/UCj7-mZiRitkaYNp_gMaD5gQ"><i class='bx bxl-youtube iconfooter youtube'></i></a>
+        </div>
+    </footer>
 </body>
 </html>
