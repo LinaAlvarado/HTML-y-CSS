@@ -19,6 +19,7 @@ background-color:$blanco;
 
 /* áreas */
 #areas{
+    height: 100vh;
     display: grid;
     grid-template-areas: 
         "nav"
@@ -104,6 +105,8 @@ section.footer{
 
 /* txt */
 .contenedor-txt{
+    padding-top: 90px;
+    padding-bottom: 30px;
     margin: auto;
     animation-name:anima;
     animation-duration: 7s;
@@ -132,7 +135,7 @@ section.footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 80px;
+    padding: 0 60px;
     margin: 10px 0px;
 }
 
@@ -162,13 +165,13 @@ section.footer{
 /* servicios */
 .servicios{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     margin: auto;
 }
+
 .titulo-servicio-index{
     color:$azulTurqui;
     text-align: center;
-    
 }
 
 .subtitulo_servicios{
@@ -176,6 +179,12 @@ section.footer{
     color:$azulTurqui;
 }
 
+.cards_C{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-self: center;
+}
 .card{
     background-color:$amarilloSuave;
     border-radius: 20px;
